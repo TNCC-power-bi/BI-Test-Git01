@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36511.14 d17.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{C9674DCB-5085-4A16-B785-4C70DD1589BD}") = "Test_GIT_Project1", "Test_GIT_Project1\Test_GIT_Project1.dtproj", "{72F2CF78-7C34-91B3-0FB7-E3BEC8FB3BE0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Development|Default = Development|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{72F2CF78-7C34-91B3-0FB7-E3BEC8FB3BE0}.Development|Default.ActiveCfg = Development
+		{72F2CF78-7C34-91B3-0FB7-E3BEC8FB3BE0}.Development|Default.Build.0 = Development
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D7384B02-E860-4A3B-BF87-D1047C48B33F}
+	EndGlobalSection
+EndGlobal
