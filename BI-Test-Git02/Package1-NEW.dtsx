@@ -11,8 +11,8 @@
   DTS:LocaleID="1054"
   DTS:ObjectName="Package1"
   DTS:PackageType="5"
-  DTS:VersionBuild="3"
-  DTS:VersionGUID="{C7256714-BCDC-4449-AD51-7614021C552B}">
+  DTS:VersionBuild="4"
+  DTS:VersionGUID="{D7F4E242-6EDD-4B7B-84B0-14E6C20AF1A8}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:Variables />
@@ -62,6 +62,21 @@
           version="1" />
       </DTS:ObjectData>
     </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Data Flow Task 3"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:Description="Data Flow Task"
+      DTS:DTSID="{81803674-611C-4FBF-A85C-B14C7415E32B}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Data Flow Task 3"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1" />
+      </DTS:ObjectData>
+    </DTS:Executable>
   </DTS:Executables>
   <DTS:PrecedenceConstraints>
     <DTS:PrecedenceConstraint
@@ -80,6 +95,14 @@
       DTS:LogicalAnd="True"
       DTS:ObjectName="Constraint 1"
       DTS:To="Package\Data Flow Task 2" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 2]"
+      DTS:CreationName=""
+      DTS:DTSID="{38E8EF2C-0B09-435B-9C07-C2642ADC8870}"
+      DTS:From="Package\Data Flow Task 2"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 2"
+      DTS:To="Package\Data Flow Task 3" />
   </DTS:PrecedenceConstraints>
   <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
 <!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
@@ -165,6 +188,44 @@
                     Point3="78.7499964796009,27.8245609076838" />
                   <mssgle:LineSegment
                     End="78.7499964796009,40.1491218153676" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="162.666666666667,42.6666666666667"
+          Id="Package\Data Flow Task 3"
+          TopLeft="488.749978151173,353.052627702499" />
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 2]"
+          TopLeft="506.333314334353,315.666663669181">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="63.7499971501529,37.3859640333186"
+              Start="0,0"
+              End="63.7499971501529,29.8859640333186">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,14.6929820166593" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,14.6929820166593"
+                    Point2="0,18.6929820166593"
+                    Point3="4,18.6929820166593" />
+                  <mssgle:LineSegment
+                    End="59.7499971501529,18.6929820166593" />
+                  <mssgle:CubicBezierSegment
+                    Point1="59.7499971501529,18.6929820166593"
+                    Point2="63.7499971501529,18.6929820166593"
+                    Point3="63.7499971501529,22.6929820166593" />
+                  <mssgle:LineSegment
+                    End="63.7499971501529,29.8859640333186" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
