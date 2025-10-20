@@ -11,8 +11,8 @@
   DTS:LocaleID="1054"
   DTS:ObjectName="Package1"
   DTS:PackageType="5"
-  DTS:VersionBuild="8"
-  DTS:VersionGUID="{7F3B6BF6-5561-49E6-98C9-C7A1904E4966}">
+  DTS:VersionBuild="9"
+  DTS:VersionGUID="{2F8076D2-0345-4220-A8F0-2F8BB38A3D8C}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:Variables />
@@ -96,7 +96,7 @@
       DTS:refId="Package\NEW"
       DTS:CreationName="Microsoft.Pipeline"
       DTS:Description="Data Flow Task"
-      DTS:DTSID="{2AE87026-116A-412F-81DE-12E144CCB3F1}"
+      DTS:DTSID="{42456C7C-DC9B-46DF-BAD8-3A067C720E02}"
       DTS:ExecutableType="Microsoft.Pipeline"
       DTS:LocaleID="-1"
       DTS:ObjectName="NEW"
@@ -115,6 +115,21 @@
       DTS:ExecutableType="Microsoft.Pipeline"
       DTS:LocaleID="-1"
       DTS:ObjectName="Stop !!"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Stop 2 !!!"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:Description="Data Flow Task"
+      DTS:DTSID="{40DC0783-E9E3-4678-B1FB-262EF68C4E36}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Stop 2 !!!"
       DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
       <DTS:Variables />
       <DTS:ObjectData>
@@ -186,9 +201,17 @@
           Id="Package\Data Flow Task 3"
           TopLeft="523.611087703871,441.771924973993" />
         <NodeLayout
+          Size="162.666666666667,42.6666666666667"
+          Id="Package\Data Flow Task 4"
+          TopLeft="27.9999989941716,121.81578819656" />
+        <NodeLayout
           Size="110.666666666667,42.6666666666667"
           Id="Package\Stop !!"
           TopLeft="734.37496717088,460.302626524916" />
+        <NodeLayout
+          Size="122.666666666667,42.6666666666667"
+          Id="Package\Stop 2 !!!"
+          TopLeft="587.499973736704,173.105261257233" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint]"
           TopLeft="322.916655658435,181.561401983735">
@@ -326,13 +349,9 @@
           </EdgeLayout.Labels>
         </EdgeLayout>
         <NodeLayout
-          Size="162.666666666667,42.6666666666667"
-          Id="Package\Data Flow Task 4"
-          TopLeft="5.5,5.5" />
-        <NodeLayout
           Size="104.666666666667,42.6666666666667"
           Id="Package\NEW"
-          TopLeft="619.374972311781,103.999998858101" />
+          TopLeft="740.624966891484,173.105261257233" />
       </GraphLayout>
     </LayoutInfo>
   </Package>
