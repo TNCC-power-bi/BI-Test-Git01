@@ -1,0 +1,31 @@
+# === Visual Studio ===
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+ 
+# === Build outputs ===
+bin/
+obj/
+*.dll
+*.exe
+*.pdb
+*.cache
+*.log
+ 
+# === SSIS specific ===
+*.dtproj.user     # user-specific SSIS project settings
+*.ispac           # deployment package (สร้างใหม่ได้ตอน build)
+ 
+# === Temporary ===
+[Tt]emp/
+*.tmp
+*.bak
+*.backup
+*.vspscc
+*.vssscc
+ 
+# === Other IDE files ===
+*.dbmdl
+*.vssscc
